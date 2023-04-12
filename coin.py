@@ -30,13 +30,13 @@ def update():
     global score
 
     if keyboard.left:
-        fox.x = fox.x - 4
+        fox.x = fox.x - 5
     elif keyboard.right:
-        fox.x = fox.x + 4
+        fox.x = fox.x + 5
     elif keyboard.up:
-        fox.y = fox.y - 4
+        fox.y = fox.y - 5
     elif keyboard.down:
-        fox.y = fox.y + 4
+        fox.y = fox.y + 5
     
     coin_collected = fox.colliderect(coin)
 
