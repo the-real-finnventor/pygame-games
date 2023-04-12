@@ -23,19 +23,19 @@ pgzrun red.py
 ```
 
 # Extras
-## Run coin collector at any time with just `coin`
+## Run coin collector at any time with just `coin` (does not work yet)
 ```
 echo alias coin-path="$PWD"/coin.py >> ~/.zprofile
 echo alias coin="pgzrun coin-path" >> ~/.zprofile
 ```
 
-## Run shoot the fruit at any time with just `shoot`
+## Run shoot the fruit at any time with just `shoot` (does not work yet)
 ```
 echo alias shoot-path="$PWD"/shoot.py >> ~/.zprofile
 echo alias shoot="pgzrun shoot-path" >> ~/.zprofile
 ```
 
-## Run red alert at any time with just `red`
+## Run red alert at any time with just `red` (does not work yet)
 ```
 echo alias red-path="$PWD"/red.py >> ~/.zprofile
 echo alias red="pgzrun red-path" >> ~/.zprofile
