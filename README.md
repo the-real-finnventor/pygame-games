@@ -40,3 +40,11 @@ echo alias shoot=pgzrun shoot-path >> ~/.zprofile
 echo alias red-path="$PWD"/red.py >> ~/.zprofile
 echo alias red=pgzrun red-path >> ~/.zprofile
 ```
+
+# How to play
+## How to play coin collector
+Use arrow keys to move the fox. To collect coins touch them with the fox. 
+## How to play shoot the fruit
+Click on the apple. (No points)
+## How to play red alert
+Click on the red star. There is 6 levels. See how fast you can beat them all.
