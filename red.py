@@ -1,4 +1,8 @@
 from random import *
+import time
+
+start_time = time.time()
+end_time = None
 
 FONT_COLOR = (255, 255, 255)
 WIDTH = 800
@@ -17,13 +21,15 @@ stars = []
 animations = []
 
 def draw():
-    global stars, current_level, game_over, game_complete
+    global stars, current_level, game_over, game_complete, end_time
     screen.clear()
     screen.blit("space", (0, 0))
     if game_over:
         display_message("GAME OVER!", "Try again.")
     elif game_complete:
-        display_message("YOU WON!", "Well done.")
+        if end_time == None:
+            end_time = time.time()
+        display_message("YOU WON!", f"It took you {round(end_time - start_time, 1)} seconds. Well done.")
     else:
         for star in stars:
             star.draw()
@@ -74,13 +80,15 @@ def handle_game_over():
     game_over = True
 
 def on_mouse_down(pos):
-    global stars, current_level, game_over, game_complete, animations
+    global stars, current_level, game_over, game_complete, animations, start_time, end_time
     if game_over or game_complete:
         game_over = False
         game_complete = False
         current_level = 1
         stars = []
         animations = []
+        start_time = time.time()
+        end_time = None
         draw()
     for star in stars:
         if star.collidepoint(pos):
