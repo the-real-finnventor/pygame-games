@@ -1,4 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
+import pgzrun
+from pygame import *
 from random import *
 apple = Actor("apple")
 
@@ -19,3 +21,5 @@ def on_mouse_down(pos):
         quit()
     
 place_apple()
+
+pgzrun.go()

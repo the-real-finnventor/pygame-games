@@ -1,4 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
+import pgzrun
+from pygame import *
 WIDTH = 1280
 HEIGHT = 720
 
@@ -98,3 +100,4 @@ def update_time_left():
         game_over()
 
 clock.schedule_interval(update_time_left, 1.0)
+pgzrun.go()

@@ -1,4 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
+import pgzrun
+from pygame import *
 from random import *
 WIDTH = 600
 HEIGHT = 600
@@ -47,3 +49,4 @@ def update():
 
 clock.schedule(time_up, 16.0)
 place_coin()
+pgzrun.go()

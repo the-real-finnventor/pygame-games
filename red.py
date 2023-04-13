@@ -1,4 +1,6 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
+import pgzrun
+from pygame import *
 from random import *
 import time
 
@@ -116,3 +118,5 @@ def stop_animations(anamations_to_stop):
 def display_message(heading_text, sub_heading_text):
     screen.draw.text(heading_text, fontsize=60, center=CENTER, color=FONT_COLOR)
     screen.draw.text(sub_heading_text, fontsize=30, center=(CENTER_X, CENTER_Y + 30), color=FONT_COLOR)
+
+pgzrun.go()
