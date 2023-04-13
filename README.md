@@ -9,22 +9,22 @@ cd pygame-games
 
 ## Run coin collector
 ```
-pgzrun coin.py
+python3 coin.py
 ```
 
 ## Run shoot the fruit
 ```
-pgzrun shoot.py
+python3 shoot.py
 ```
 
 ## Run red alert
 ```
-pgzrun red.py
+python3 red.py
 ```
 
 ## Run big quiz
 ```
-pgzrun quiz.py
+python3 quiz.py
 ```
 
 # Extras
