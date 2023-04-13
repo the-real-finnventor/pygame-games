@@ -22,6 +22,11 @@ pgzrun shoot.py
 pgzrun red.py
 ```
 
+## Run big quiz
+```
+pgzrun quiz.py
+```
+
 # Extras
 ## Run coin collector at any time with just `coin` (does not work yet)
 ```
