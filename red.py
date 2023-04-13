@@ -1,3 +1,4 @@
+#!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
 from random import *
 import time
 
