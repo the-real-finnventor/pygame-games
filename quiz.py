@@ -1,5 +1,5 @@
 #!/Library/Frameworks/Python.framework/Versions/3.11/bin/pgzrun
-import pgzrun
+from pgzrun import *
 from pygame import *
 WIDTH = 1280
 HEIGHT = 720
@@ -20,7 +20,7 @@ answer_box4.move_ip(735, 558)
 answer_boxs = [answer_box1, answer_box2, answer_box3, answer_box4]
 
 score = 0
-time_left = 10
+time_left = 30
 
 q1 = ["The ‘Felifors’ spell turns a cat into a what?", "Hat", "Bat", "Matchbox", "Cauldron", 3]
 q2 = ["Who wrote the 7-book series titled ‘The Standard Book of Spells’?", "Kennilworthy Whisp", "Rita Skeeter", "Bathilda Bagshot", "Miranda Goshawk", 4]
@@ -60,17 +60,19 @@ def game_over():
 
 def correct_answer():
     global question, score, time_left
-
+    time_left = 30
     score += 1
     if questions:
         question = questions.pop(0)
-        time_left += 2
+        time_left += 3
     else:
         print("End of questions")
         game_over()
 
 def incorrect_answer():
-    global question
+    global question, time_left
+    
+    time_left = 30
 
     if questions:
         question = questions.pop(0)
@@ -100,4 +102,4 @@ def update_time_left():
         game_over()
 
 clock.schedule_interval(update_time_left, 1.0)
-pgzrun.go()
+go()
